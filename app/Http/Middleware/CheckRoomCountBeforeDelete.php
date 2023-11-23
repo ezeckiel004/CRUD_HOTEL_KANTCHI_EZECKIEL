@@ -20,7 +20,7 @@ class CheckRoomCountBeforeDelete
 
         // Vérifie si le nombre de chambres est inférieur à 3 et que la route n'est pas 'rooms.create'
         if ($roomCount < 3 && 
-    !in_array($request->route()->getName(), ['rooms.index','roums.create', 'rooms.show', 'rooms.edit', 'rooms.update'])) {
+    !in_array($request->route()->getName(), ['rooms.index','rooms.create', 'rooms.show', 'rooms.edit', 'rooms.update'])) {
         abort(403, 'Vous devez avoir au moins 3 chambres pour effectuer cette action.');
 }
 
