@@ -59,6 +59,8 @@
       </tbody>
     </table>
     {{ $rooms->links() }}
+
+    {{-- Ezeckiel Kantchi --}}
   </div>
 </div>
 
